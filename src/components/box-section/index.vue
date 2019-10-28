@@ -129,9 +129,9 @@ export default {
     autoContentStyle() {
       const style = {};
       if (this.autoShowHeader) {
-        style.margin = "0px 0px 2px 0px";
+        style.margin = '0px 0px 2px 0px';
       } else {
-        style.margin = "2px 0px 2px 0px";
+        style.margin = '2px 0px 2px 0px';
       }
       return style;
     },
