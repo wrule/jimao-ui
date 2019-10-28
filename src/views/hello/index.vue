@@ -10,7 +10,7 @@
     <layer-header>
       <div style="height: 300px">
         <box-section
-          :gray="true">
+          title="请求量">
           <div v-for="i in 15" :key="i">
             <span v-for="j in 10" :key="`${i}${j}`">你好，世界</span>
           </div>
