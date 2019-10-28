@@ -1,48 +1,17 @@
 <!--局部样式-->
 <style lang="scss" scoped>
-.app {
-  width: 100%;
-}
 </style>
 
 <!--全局局部覆盖样式-->
-<style>
-  html, body {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    min-width: 1000px;
-    overflow-x: auto;
-    overflow-y: auto;
-    font-size: 14px;
-    font-family:
-      PingFangSC-regular,
-      Helvetica Neue,
-      Helvetica,
-      Hiragino Sans GB,
-      Microsoft YaHei;
-    color: #333;
-    background-color: #f0f2f5;
-  }
-  div {
-    box-sizing: border-box;
-  }
-  ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-  }
-</style>
+<style></style>
 
 <template>
-  <div class="app" id="app">
-    <router-view />
-  </div>
+  <div></div>
 </template>
 
 <script>
 export default {
-  name: 'app',
+  name: '',
   props: {},
   data() {
     return {

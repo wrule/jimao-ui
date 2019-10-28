@@ -1,48 +1,21 @@
 <!--局部样式-->
 <style lang="scss" scoped>
-.app {
-  width: 100%;
-}
 </style>
 
 <!--全局局部覆盖样式-->
-<style>
-  html, body {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    min-width: 1000px;
-    overflow-x: auto;
-    overflow-y: auto;
-    font-size: 14px;
-    font-family:
-      PingFangSC-regular,
-      Helvetica Neue,
-      Helvetica,
-      Hiragino Sans GB,
-      Microsoft YaHei;
-    color: #333;
-    background-color: #f0f2f5;
-  }
-  div {
-    box-sizing: border-box;
-  }
-  ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-  }
-</style>
+<style></style>
 
 <template>
-  <div class="app" id="app">
-    <router-view />
+  <div class="view-hello">
+    <layer-header />
   </div>
 </template>
 
 <script>
+import layer_header from '@/components/layer-header';
+
 export default {
-  name: 'app',
+  name: 'view-hello',
   props: {},
   data() {
     return {
@@ -79,6 +52,8 @@ export default {
   },
   created() {},
   mounted() {},
-  components: {},
+  components: {
+    [layer_header.name]: layer_header,
+  },
 };
 </script>
