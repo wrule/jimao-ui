@@ -7,7 +7,7 @@
 
 <template>
   <div class="view-hello">
-    <layer-header>
+    <layer-header :msg="123">
       <div style="height: 300px">
         <box-section
           title="请求量">
@@ -20,53 +20,12 @@
   </div>
 </template>
 
-<script>
-import layer_header from '@/components/layer-header';
-import BoxSection from '@/components/box-section/index.vue';
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator';
+import LayerHeader from '@/components/LayerHeader/index.vue';
 
-export default {
-  name: 'view-hello',
-  props: {},
-  data() {
-    return {
-      //#region 页面对象
-      //#endregion
-      //#region 页面内容绑定数据
-      //#endregion
-      //#region 页面样式绑定数据
-      //#endregion
-    };
-  },
-  watch: {},
-  computed: {
-    //#region 常量计算属性
-    //#endregion
-    //#region 数据转换计算属性
-    //#endregion
-    //#region 样式计算属性
-    //#endregion
-  },
-  methods: {
-    //#region 页面事件方法
-    //#endregion
-    //#region 业务逻辑方法
-    //#endregion
-    //#region 接口访问方法
-    //#endregion
-    //#region 数据转换方法
-    //#endregion
-    //#region 自动样式方法
-    //#endregion
-    //#region 其他方法
-    //#endregion
-  },
-  created() {},
-  mounted() {
-    console.log(BoxSection);
-  },
-  components: {
-    [layer_header.name]: layer_header,
-    [BoxSection.name]: BoxSection,
-  },
-};
+@Component
+export default class ViewHello extends Vue {
+  @Prop() private msg!: string;
+}
 </script>
