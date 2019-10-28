@@ -27,9 +27,10 @@
   <div class="layer-header">
     <div class="header-wraper"></div>
     <div class="content-wraper">
-      <div v-for="i in 1" :key="i">
+      <!-- <div v-for="i in 1" :key="i">
         <span v-for="j in 100" :key="j">你好，世界</span>
-      </div>
+      </div> -->
+      <slot />
     </div>
   </div>
 </template>

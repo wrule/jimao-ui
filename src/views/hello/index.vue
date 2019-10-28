@@ -7,12 +7,22 @@
 
 <template>
   <div class="view-hello">
-    <layer-header />
+    <layer-header>
+      <div style="height: 300px">
+        <box-section
+          :gray="true">
+          <div v-for="i in 15" :key="i">
+            <span v-for="j in 10" :key="`${i}${j}`">你好，世界</span>
+          </div>
+        </box-section>
+      </div>
+    </layer-header>
   </div>
 </template>
 
 <script>
 import layer_header from '@/components/layer-header';
+import box_section from '@/components/box-section';
 
 export default {
   name: 'view-hello',
@@ -54,6 +64,7 @@ export default {
   mounted() {},
   components: {
     [layer_header.name]: layer_header,
+    [box_section.name]: box_section,
   },
 };
 </script>
