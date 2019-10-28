@@ -22,7 +22,7 @@
 
 <script>
 import layer_header from '@/components/layer-header';
-import box_section from '@/components/box-section';
+import BoxSection from '@/components/box-section/index.vue';
 
 export default {
   name: 'view-hello',
@@ -61,10 +61,12 @@ export default {
     //#endregion
   },
   created() {},
-  mounted() {},
+  mounted() {
+    console.log(BoxSection);
+  },
   components: {
     [layer_header.name]: layer_header,
-    [box_section.name]: box_section,
+    [BoxSection.name]: BoxSection,
   },
 };
 </script>
